@@ -1,4 +1,5 @@
 class Review < ApplicationRecord
   belongs_to :car
-  validates :review, presence: true
+  validates :comment, presence: true
+  validates :rating, presence: true, numericality: { only_integer: true }
 end
