@@ -1,4 +1,4 @@
 class Favourite < ApplicationRecord
   belongs_to :car
-  validates favourite: true
+  validates :favourite, presence: true
 end
